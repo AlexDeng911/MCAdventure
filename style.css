@@ -2,364 +2,332 @@
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+body {
+  font-family: Gilroy;
+  color: #fff;
+  font-weight: 600;
+}
 button {
   color: #fff;
-  font-style: Gilroy;
+  font-family: Gilroy;
   font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 1px;
 }
-button:hover {
+button:hover,
+.link-page:hover,
+.menu__item:hover,
+.menu__link:hover,
+a:hover {
   cursor: pointer;
 }
-.wrapper {
-  position: relative;
-  width: 1920px;
-  height: 1080px;
-  background: #fff;
-  font-style: Gilroy;
+
+a,
+a:hover {
+  text-decoration: none;
   color: #fff;
   font-weight: 600;
 }
-.container {
-  position: absolute;
-  width: 1181px;
-  height: 819px;
-  left: 368px;
-  top: 133px;
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 818px;
+  justify-content: center;
+}
+[class*="__container"] {
+  max-width: 1479px;
+  margin: 0px auto;
   border-radius: 25px;
-  background-color: #14161c;
+  padding: 0px 15px;
+  background-color: #1b1d22;
+}
+
+/*============== Header - верхнее меню ==========================*/
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+.name__site {
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+.title-page {
+  display: flex;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.link-page {
+  opacity: 0.6;
+}
+.header__menu {
+  flex: 1 1 auto;
+}
+.menu {
+  display: flex;
+}
+.button {
+  display: inline-block;
+  width: 178px;
+  height: 57px;
+  margin: 0px 10px;
+  background: linear-gradient(180deg, rgba(122, 217, 79, 0.4) 0%, rgba(0, 173, 24, 0.4) 100%);
+  border-radius: 8px;
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+.control__button {
+  flex: 0 0 110px;
+  justify-content: flex-end;
+}
+.control {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #181a20;
+  border-color: #181a20;
+}
+.hide {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #181a20;
+  border-color: #181a20;
+}
+.close {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #181a20;
+  border-color: #181a20;
 }
 .right-picture {
   position: absolute;
   width: 129px;
   height: 154px;
-  top: 13px;
-  right: -104px;
+  top: 1em;
+  right: -8em;
+  z-index: -1;
 }
 .left-picture {
   position: absolute;
   width: 118px;
   height: 200px;
-  bottom: -28px;
-  left: -98px;
+  bottom: -3em;
+  left: -7em;
+  z-index: -1;
 }
-.wrapper > .top-menu {
-  position: absolute;
-  width: 1177px;
-  height: 104px;
-  left: 372px;
-  top: 133px;
-  background: #181a20;
-  border-radius: 24px;
-  font-size: 17px;
+/*===========Основной блок пользовательских настроек=============   */
+
+.middle-section {
+  padding: 0;
 }
-.top-menu {
+.middle-section__container {
   display: flex;
 }
-
-.logo {
-  position: absolute;
-  width: 68px;
-  height: 68px;
-  left: 33px;
-  top: 19px;
-}
-.title-page {
-  position: absolute;
-  left: 120px;
-  top: 32px;
-}
-.link-page {
-  position: absolute;
-  left: 120px;
-  top: 52px;
-  opacity: 0.44;
-}
-.link-page:hover {
-  cursor: pointer;
-}
-.lk-page {
-  position: absolute;
-  left: 630px;
-  top: 42px;
-}
-.lk-page:hover {
-  cursor: pointer;
-}
-.button {
-  box-sizing: border-box;
-  position: absolute;
-  width: 178px;
-  height: 57px;
-  left: 410px;
-  top: 24px;
-  color: #fff;
-  background: linear-gradient(180deg, rgba(122, 217, 79, 0.8) 0%, rgba(0, 173, 24, 0.8) 100%);
-  border-radius: 8px;
-}
-.settings img {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  top: 47px;
-  right: 111px;
-}
-.hide img {
-  position: absolute;
-  width: 14px;
-  height: 2px;
-  top: 57px;
-  right: 77px;
-  opacity: 0.6;
-}
-.close img {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  top: 47px;
-  right: 50px;
-  opacity: 0.6;
-}
 .setting-hero {
-  position: absolute;
-  width: 545px;
-  height: 323px;
-  left: 37px;
-  top: 155px;
+  display: flex;
+  flex: 0 1 50%;
   color: #fff;
 
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
   border-radius: 22px;
 }
 .skin {
-  position: absolute;
-  width: 259px;
-  height: 323px;
+  display: flex;
+  flex: 0 1 50%;
+  height: 100%;
+  flex-direction: column;
   color: #fff;
-
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
   border-radius: 22px;
 }
-.change-skin {
-  position: absolute;
-  width: 259px;
-  height: 56px;
-  bottom: 0;
-
+.skin-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 27px 0px 3px 10px;
+}
+.circle {
+  width: 8px;
+  height: 8px;
+  margin-top: 6px;
+  border-radius: 50%;
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.9) 0%, rgba(0, 173, 24, 0.9) 100%);
-  border-radius: 13px;
 }
 .your-skin {
-  position: absolute;
-  top: 27px;
-  left: 56px;
   font-size: 15px;
   line-height: 18px;
 }
-.circle{
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  top: 32px;
-  left: 32px;
-  border-radius: 50%;
-    background: linear-gradient(180deg, rgba(122, 217, 79, 0.9) 0%, rgba(0, 173, 24, 0.9) 100%);
-}
 .triangle {
-  position: absolute;
   width: 12px;
-  left: 200px;
-  top: 28px;
-
-  border: 8px solid transparent; 
+  border: 8px solid transparent;
   border-left: 16px solid rgb(1, 189, 1);
   border-radius: 8px;
 }
-.skin-image {
-  position: absolute;
-  top: 48px;
-  left: 41px;
+.skin-image img {
+  display: flex;
+  margin: auto;
 }
-.setting-hero-title {
-  position: absolute;
-  top: 20px;
-  left: 274px;
+.button__box {
+  position: relative;
+  bottom: 0px;
+  border-radius: 13px 24px;
+}
+.change-hero__box {
+  flex: 0 1 50%;
+  padding: 10px 10px 10px 20px;
+}
+.setting__title {
+  padding: 27px 0px 15px 0px;
   font-size: 17px;
   line-height: 20px;
 }
-.change-skin-title {
-  position: absolute;
-  top: 62px;
-  left: 273px;
-  font-size: 13px;
-  line-height: 15px;
-  font-weight: 500;
-}
-.change-cloth-title {
-  position: absolute;
-  top: 161px;
-  left: 273px;
+.change-skin__title {
+  padding: 10px 0px;
   font-size: 13px;
   line-height: 15px;
   font-weight: 500;
 }
 .rotate-hero {
-  position: absolute;
   width: 186px;
-  left: 304px;
-  top: 266px;
   font-size: 13px;
   line-height: 15px;
   font-weight: 500;
   text-align: center;
+  padding: 10px 0px 0px 0px;
 }
-.change-skin-hero {
-  position: absolute;
-  width: 245px;
+.change__button {
+  width: 100%;
   height: 50px;
-  right: 26px;
-  top: 94px;
+  /* bottom: 0px; */
 
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.4) 0%, rgba(0, 173, 24, 0.4) 100%);
-  border-radius: 8px;
+  border-radius: 13px;
 }
-.change-cloth-hero {
-  position: absolute;
-  width: 245px;
-  height: 50px;
-  right: 26px;
-  top: 193px;
+/* ============блок тарифов=============== */
 
-  background: linear-gradient(180deg, rgba(122, 217, 79, 0.4) 0%, rgba(0, 173, 24, 0.4) 100%);
-  border-radius: 8px;
+.balance-block {
+  flex: 0 1 50%;
 }
-.balance-title {
-  position: absolute;
-  top: 155px;
-  left: 592px;
-  font-weight: 600;
-  font-size: 17px;
+.balance-block__container {
+  padding: 10px 10px 0px 20px;
+  max-width: 532px;
 }
 .balance {
-  position: absolute;
-  width: 532px;
+  display: flex;
+  justify-content: space-between;
   height: 65px;
-  right: 57px;
-  top: 186px;
-
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
   border-radius: 10px;
+  margin: 10px 0 10px 0;
 }
 .balance-score {
-  position: absolute;
-  width: 54px;
+  padding: 20px 0px 0px 20px;
   height: 24px;
-  left: 23px;
-  top: 20px;
-
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
 }
 .light-box {
-  position: absolute;
   width: 26px;
   height: 26px;
-  right: 21px;
-  top: 19px;
-
+  margin: 17px 20px 0px 0px;
   background: linear-gradient(180deg, #7ad94f 0%, #00ad18 100%);
   box-shadow: 0px 4px 13px rgba(72, 199, 56, 0.28);
   border-radius: 4px;
   transform: rotate(45deg);
 }
 .tarif-title {
-  position: absolute;
-  top: 272px;
-  left: 592px;
   font-weight: 600;
   font-size: 17px;
 }
 .tarif {
-  position: absolute;
-  width: 532px;
+  display: flex;
+  margin: 10px;
   height: 65px;
-  right: 57px;
-  top: 303px;
 
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
+  border-radius: 10px;
+}
+.score-premium,
+.score-premium__days,
+.score-premium__hightech {
+  flex: 0 1 33%;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 5px;
   border-radius: 10px;
 }
 .tarif-score {
-  position: absolute;
-  width: 85px;
-  height: 24px;
-  left: 44px;
-  top: 20px;
+  display: flex;
+  justify-content: space-around;
 
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
 }
-.days {
-  position: absolute;
-  width: 172px;
-  height: 65px;
-  left: 180px;
-
+.score-premium {
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
-  border-radius: 10px;
 }
-.hightech {
-  position: absolute;
-  width: 172px;
-  height: 65px;
-  right: 0;
-
+.score-premium__days {
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
-  border-radius: 10px;
+}
+.score-premium__hightech {
+  background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
 }
 
 .authentification-title {
-  position: absolute;
-  top: 382px;
-  left: 592px;
   font-weight: 600;
   font-size: 17px;
 }
 .authentification {
-  box-sizing: border-box;
-  position: absolute;
-  width: 532px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 10px 0;
   height: 65px;
-  right: 58px;
-  top: 413px;
   border: solid 1px rgba(0, 173, 24, 0.2);
   border-radius: 10px;
 }
 
 .authentification-score {
-  position: absolute;
-  width: 93px;
-  height: 20px;
-  left: 16px;
-  top: 21px;
-
+  display: flex;
+  flex: 0 0 60%;
+  align-items: center;
+  padding: 0px 30px;
   font-weight: 600;
   font-size: 17px;
-  line-height: 20px;
 }
 .onoff-box {
-  position: absolute;
   width: 79px;
   height: 37px;
-  right: 21px;
-  top: 14px;
-
+  margin: auto;
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
   border-radius: 24.5px;
 }
 .on-box {
-  position: absolute;
   width: 37px;
   height: 37px;
   left: 0;
@@ -367,90 +335,149 @@ button:hover {
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.4) 0%, rgba(0, 173, 24, 0.4) 100%);
   border-radius: 50%;
 }
-.circle2{
-  position: absolute;
+
+/* ============== Блок социальных сетей == в разделе footer ============== */
+.social {
+  position: relative;
+  justify-content: center;
+}
+.social-header {
+  display: flex;
+  justify-content: space-between;
+  width: 245px;
+  height: 15px;
+  padding: 15px;
+}
+.social__box {
+  display: flex;
+  padding: 15px 0px;
+}
+.circle2 {
   width: 8px;
   height: 8px;
-  top: 533px;
-  left: 57px;
+  margin-top: 4px;
   border-radius: 50%;
-    background: linear-gradient(180deg, rgba(122, 217, 79, 0.9) 0%, rgba(0, 173, 24, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(122, 217, 79, 0.9) 0%, rgba(0, 173, 24, 0.9) 100%);
 }
 .socialnet-title {
-  position: absolute;
-  top: 525px;
-  left: 76px;
   width: 230px;
   height: 23px;
   font-size: 19px;
 }
 .socialnet-message-box {
-  box-sizing: border-box;
-  position: absolute;
+  display: flex;
+  margin: 15px;
   width: 481px;
   height: 182px;
-  left: 37px;
-  top: 569px;
-
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
   border-radius: 22px;
   border: dashed 2px #00ad18;
 }
-.socialnet-maessage {
-  position: absolute;
-  width: 432px;
-  height: 46px;
-  left: 25px;
-  top: 67px;
-
+.msg {
+  margin: auto;
+}
+.socialnet-message {
   font-size: 19px;
   line-height: 23px;
   text-align: center;
 }
-.socialnet-connected {
-  position: absolute;
+.socialnet-block {
+  display: flex;
+  flex-direction: column;
   width: 182px;
   height: 182px;
-  left: 540px;
-  top: 568px;
-
+  margin: 15px;
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.9) 0%, rgba(0, 173, 24, 0.9) 100%);
   border-radius: 22px;
 }
-.socialnet-logo {
-  position: absolute;
-  left: 57px;
-  top: 72px;
+.socialnet-block__disconnect {
+  background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
+}
+.socialnet-block img,
+.socialnet-block__disconnect img {
+  margin: auto auto 10px auto;
 }
 .connect {
-  position: absolute;
-  left: 55px;
-  bottom: 22px;
+  flex: 0 1 40%;
   font-size: 12px;
+  text-align: center;
 }
-.socialnet-disconnected {
-  position: absolute;
-  width: 182px;
-  height: 182px;
-  right: 255px;
-  top: 568px;
+.disconnect {
+  flex: 0 1 40%;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.4;
+}
 
-  background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
-  border-radius: 22px;
-}
-.socialnet {
-  position: absolute;
-  width: 182px;
-  height: 182px;
-  right: 51px;
-  top: 568px;
-
-  background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
-  border-radius: 22px;
-}
 .tarif:hover,
 .days:hover,
 .hightech:hover,
 .on-box:hover {
   cursor: pointer;
+}
+/* ========= Адаптация к разрешениям =======================  */
+/* ===============================PC size */
+@media (max-width: 1479px) {
+  [class*="__container"] {
+    max-width: 954px;
+  }
+  .middle-section {
+    max-width: 954px;
+  }
+  .setting-hero {
+    max-width: 467px;
+  }
+  .balance-block {
+    max-width: 467px;
+  }
+  .skin {
+    max-width: 235px;
+  }
+  .right-picture,
+  .left-picture {
+    display: none;
+  }
+}
+/* ============================Tablet size */
+@media (max-width: 991.8px) {
+  [class*="__container"] {
+    max-width: 767.98px;
+  }
+  .middle-section {
+    max-width: 954px;
+  }
+  .button {
+    width: 115px;
+    margin: 0px 5px;
+  }
+  li,
+  .menu__item,
+  .menu__list {
+    width: auto;
+    padding: 0px 3px;
+    margin: 0px 3px;
+  }
+  .logo {
+    display: none;
+  }
+}
+/* =============================Phone size */
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: 417px;
+    padding: 0 5px;
+  }
+  .middle-section__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .control__button {
+    display: none;
+  }
+  .header .name__site a {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
 }

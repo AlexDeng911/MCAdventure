@@ -1,0 +1,39 @@
+
+/* ============== Форма регистрации ============== */
+.registartion__container{
+  display: flex;
+  height: 400px;
+    background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
+  border-radius: 22px;
+}
+form {
+  flex: 0 1 50%;
+  padding: 10px 0;
+}
+label {
+  padding: 8px 0;
+  width: 140px;
+}
+.input__field {
+  display: flex;
+      justify-content: space-around;
+  padding: 8px 0;
+}
+input{
+width: 140px;
+}
+.check-password {
+  width: auto;
+  height: 57px;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(122, 217, 79, 0.8) 0%, rgba(0, 173, 24, 0.8) 100%);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 10px 10px;
+}
+#registration {
+  visibility: hidden;
+}
+#false {
+  visibility: hidden;
+}
