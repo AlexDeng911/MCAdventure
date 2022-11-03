@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lk.css" />
+    <link rel="stylesheet" href="fonts/Gilroy-ExtraBold.otf" />
+    <link rel="stylesheet" href="fonts/Gilroy-Light.otf" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <container class="__container">
+        <header class="header">
+          <div class="header__container">
+            <div class="logo">
+              <img src="adventure 1.png" alt="logo" />
+            </div>
+            <div class="name__site">
+              <p class="title-page">Adventures</p>
+              <a href="" class="link-page">McAdventure.Net</a>
+            </div>
+            <nav class="header__menu menu">
+              <button class="button">
+                <a href="index.html">Главная</a>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__item"><a href="lk.html">Личный кабинет</a></li>
+              </ul>
+            </nav>
+            <div class="control__button">
+              <button class="control"><img src="settings.png" alt="" /></button>
+              <button class="hide"><img src="hide.png" alt="" /></button>
+              <button class="close"><img src="close.png" alt="" /></button>
+              <img class="right-picture" src="right_picture.svg" alt="right_picture" />
+            </div>
+          </div>
+        </header>
+        <div class="registartion__container">
+          <form name="lk">
+            <div class="input__field">
+              <label> Введите логин:</label>
+              <input type="text" placeholder="Введите login" />
+            </div>
+            <div class="input__field">
+              <label>Введите пароль:</label>
+              <input type="password" name="pass" />
+            </div>
+            <div class="input__field">
+              <label>Повторите пароль:</label>
+              <input type="password" placeholder="Повторите password" name="repeat" />
+            </div>
+            <button class="check-password" onclick="checkPassword()">Зарегистрироваться</button>
+          </form>
+        </div>
+
+        <div id="registration">
+          <p>Вы зарегистрированы</p>
+        </div>
+        <div id="false">
+          <p>Пароли не совпадают</p>
+        </div>
+      </container>
+    </div>
+  </body>
+</html>
