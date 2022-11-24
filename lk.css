@@ -1,26 +1,44 @@
-
 /* ============== Форма регистрации ============== */
-.registartion__container{
+.registartion__container {
   display: flex;
   height: 400px;
-    background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
+  background: linear-gradient(180deg, rgba(122, 217, 79, 0.1) 0%, rgba(0, 173, 24, 0.1) 100%);
   border-radius: 22px;
+  margin-bottom: 15px;
 }
 form {
   flex: 0 1 50%;
   padding: 10px 0;
+  margin-right: 15px;
 }
 label {
   padding: 8px 0;
   width: 140px;
 }
+.input__2 label {
+  width: 200px;
+  text-align: right;
+  padding: 8px 8px;
+}
+.title__registration {
+  text-align: center;
+  padding: 15px 0;
+}
 .input__field {
   display: flex;
-      justify-content: space-around;
   padding: 8px 0;
 }
-input{
-width: 140px;
+input {
+  width: 140px;
+  margin-left: 10px;
+}
+.input__2 {
+  width: 380px;
+  margin: 15px;
+}
+#without__sign {
+  width: 180px;
+  height: 40px;
 }
 .check-password {
   width: auto;
@@ -30,6 +48,14 @@ width: 140px;
   border-radius: 8px;
   padding: 10px 12px;
   margin: 10px 10px;
+}
+.send {
+  height: 37px;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(122, 217, 79, 0.8) 0%, rgba(0, 173, 24, 0.8) 100%);
+  border-radius: 8px;
+  padding: 0px 12px;
+  margin: 5px 0px 0px 10px;
 }
 #registration {
   visibility: hidden;

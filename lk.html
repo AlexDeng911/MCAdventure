@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="lk.css" />
-    <link rel="stylesheet" href="fonts/Gilroy-ExtraBold.otf" />
-    <link rel="stylesheet" href="fonts/Gilroy-Light.otf" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./fonts/Gilroy-ExtraBold.otf" />
+    <link rel="stylesheet" href="./fonts/Gilroy-Light.otf" />
     <title>Document</title>
   </head>
   <body>
+    <script src="lk.js"></script>
     <div class="wrapper">
       <container class="__container">
         <header class="header">
@@ -41,27 +41,34 @@
         </header>
         <div class="registartion__container">
           <form name="lk">
+            <h2 class="title__registration">Регистрационная форма</h2>
             <div class="input__field">
               <label> Введите логин:</label>
-              <input type="text" placeholder="Введите login" />
+              <input type="test" autocomplete="username" placeholder="Введите login" />
             </div>
             <div class="input__field">
               <label>Введите пароль:</label>
-              <input type="password" name="pass" />
+              <input type="password" autocomplete="new-password" />
             </div>
             <div class="input__field">
               <label>Повторите пароль:</label>
-              <input type="password" placeholder="Повторите password" name="repeat" />
+              <input type="password" placeholder="re-enter password" />
             </div>
             <button class="check-password" onclick="checkPassword()">Зарегистрироваться</button>
+            <div id="registration">
+              <p>Вы зарегистрированы</p>
+            </div>
+            <div id="false">
+              <p>Пароли не совпадают</p>
+            </div>
           </form>
-        </div>
-
-        <div id="registration">
-          <p>Вы зарегистрированы</p>
-        </div>
-        <div id="false">
-          <p>Пароли не совпадают</p>
+          <form name="control">
+            <div class="input__field input__2">
+              <label for="input__2">Текст для проверки:</label>
+              <input type="text" id="without__sign" name="controlText" />
+              <button class="send" name="checkButton">Проверка</button>
+            </div>
+          </form>
         </div>
       </container>
     </div>
