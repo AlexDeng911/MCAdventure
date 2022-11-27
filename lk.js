@@ -9,8 +9,4 @@ window.onload = function () {
       console.log("Incorrect sign");
     }
   });
-
-  checkBtn.addEventListener("click", (e) => {
-    console.log(control__text.value);
-  });
 };
