@@ -63,10 +63,24 @@
             </div>
           </form>
           <form name="control">
+            <h2 class="title__registration" align-text="center">Inputs</h2>
             <div class="input__field input__2">
-              <label for="input__2">Текст для проверки:</label>
-              <input type="text" id="without__sign" name="controlText" />
-              <button class="send" name="checkButton">Проверка</button>
+              <div class="firstField">
+                <label>Text for check:</label>
+                <input type="text" id="symbol_check" name="controlText" />
+                <button class="send" id="chkBtn" name="checkButton">Check</button>
+              </div>
+              <div class="secondField">
+                <label for="input__2">Color:</label>
+                <input type="color" id="set-color" name="setColor" />
+                <!-- <span class="colorNumber">#fff</span> -->
+                <button class="send" id="colorBtn" name="checkButton">Set color</button>
+              </div>
+              <div class="thirdField">
+                <label for="set-date">Date:</label>
+                <input type="date" id="set-date" name="setDate" />
+                <button class="send" id="dateBtn" name="checkButton">Set</button>
+              </div>
             </div>
           </form>
         </div>
