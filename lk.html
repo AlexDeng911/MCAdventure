@@ -41,32 +41,51 @@
         </header>
         <div class="registartion__container">
           <form name="lk">
-            <h2 class="title__registration">Регистрационная форма</h2>
+            <h2 class="title__registration">Registration</h2>
             <div class="input__field">
-              <label> Введите логин:</label>
+              <label>Login:</label>
               <input type="test" autocomplete="username" placeholder="Введите login" />
             </div>
             <div class="input__field">
-              <label>Введите пароль:</label>
+              <label>E-mail:</label>
+              <input type="e-mail" autocomplete="e-mail" />
+            </div>
+            <div class="input__field">
+              <label>Password:</label>
               <input type="password" autocomplete="new-password" />
             </div>
             <div class="input__field">
-              <label>Повторите пароль:</label>
+              <label>Repeat pass:</label>
               <input type="password" placeholder="re-enter password" />
             </div>
-            <button class="check-password" onclick="checkPassword()">Зарегистрироваться</button>
+            <button id="check__password">Зарегистрироваться</button>
             <div id="registration">
-              <p>Вы зарегистрированы</p>
+              <span>Вы зарегистрированы</span>
             </div>
             <div id="false">
-              <p>Пароли не совпадают</p>
+              <span>Пароли не совпадают</span>
             </div>
           </form>
           <form name="control">
+            <h2 class="title__registration" align-text="center">Inputs</h2>
             <div class="input__field input__2">
-              <label for="input__2">Текст для проверки:</label>
-              <input type="text" id="without__sign" name="controlText" />
-              <button class="send" name="checkButton">Проверка</button>
+              <div class="firstField">
+                <label>Text for check:</label>
+                <input type="text" id="symbol__check" name="controlText" />
+                <button class="send" id="chkBtn" name="checkButton">Check</button>
+              </div>
+              <div class="secondField">
+                <label for="input__2">Color:</label>
+                <input type="color" id="set__color" name="setColor" />
+                <span class="colorNumber"></span>
+                <button class="send" id="colorBtn" name="colorBtn">Set color</button>
+              </div>
+              <div class="thirdField">
+                <label for="set-date">Date:</label>
+                <input type="date" id="set__date" name="setDate" />
+                <span class="dateRecord"></span>
+                <button class="send" id="dateBtn" name="setDateButton">Set</button>
+              </div>
             </div>
           </form>
         </div>

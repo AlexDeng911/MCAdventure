@@ -1,4 +1,4 @@
-/* ============== Форма регистрации ============== */
+/* ============== Поля инпутов============== */
 .registartion__container {
   display: flex;
   height: 400px;
@@ -9,11 +9,11 @@
 form {
   flex: 0 1 50%;
   padding: 10px 0;
-  margin-right: 15px;
+  margin: 15px;
 }
 label {
   padding: 8px 0;
-  width: 140px;
+  width: 110px;
 }
 .input__2 label {
   width: 200px;
@@ -22,25 +22,32 @@ label {
 }
 .title__registration {
   text-align: center;
-  padding: 15px 0;
 }
 .input__field {
   display: flex;
-  padding: 8px 0;
+  padding: 4px 0;
+  margin: 8px 10px;
 }
-input {
+input, span{
   width: 140px;
   margin-left: 10px;
 }
 .input__2 {
-  width: 380px;
+  flex-direction: column;
+  width: 330px;
+  margin: 10px;
+  align-items: center;
+}
+#symbol_check {
+  width: 280px;
+  height: 20px;
+  margin-top: 8px;
+}
+.firstField .secondField .thirdField {
+  flex-direction: row;
   margin: 15px;
 }
-#without__sign {
-  width: 180px;
-  height: 40px;
-}
-.check-password {
+#check__password {
   width: auto;
   height: 57px;
   color: #fff;
@@ -51,11 +58,12 @@ input {
 }
 .send {
   height: 37px;
+  width: 150px;
   color: #fff;
   background: linear-gradient(180deg, rgba(122, 217, 79, 0.8) 0%, rgba(0, 173, 24, 0.8) 100%);
   border-radius: 8px;
   padding: 0px 12px;
-  margin: 5px 0px 0px 10px;
+  margin: 10px;
 }
 #registration {
   visibility: hidden;
