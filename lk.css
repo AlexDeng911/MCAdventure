@@ -46,6 +46,12 @@ input, span{
 .firstField .secondField .thirdField {
   flex-direction: row;
   margin: 15px;
+  align-items: center;
+}
+#symbol_check {
+  width: 280px;
+  height: 20px;
+  margin-top: 8px;
 }
 #check__password {
   width: auto;

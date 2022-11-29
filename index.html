@@ -12,7 +12,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <container class="__container">
+      <div class="__container">
+        <img class="right-picture" src="right_corner.png" alt="" />
         <header class="header">
           <div class="header__container">
             <div class="logo">
@@ -34,7 +35,6 @@
               <button class="control"><img src="settings.png" alt="" /></button>
               <button class="hide"><img src="hide.png" alt="" /></button>
               <button class="close"><img src="close.png" alt="" /></button>
-              <img class="right-picture" src="right_picture.svg" alt="right_picture" />
             </div>
           </div>
         </header>
@@ -47,9 +47,7 @@
                   <p class="your-skin">Ваш скин</p>
                   <div class="triangle"></div>
                 </div>
-                <div class="skin-image">
-                  <img src="skin.png" alt="your skin" />
-                </div>
+                <img class="skin-image" src="skin.png" alt="your skin" />
                 <div class="button__box">
                   <button class="change__button">Изменить</button>
                 </div>
@@ -72,11 +70,9 @@
                 </div>
                 <span class="tarif-title">Купленная привилегия</span>
                 <div class="tarif">
-                  <button class="score-premium"><span class="tarif-score">Премиум</span></button>
-                  <button class="score-premium score-premium__days"><span class="tarif-score">20 дней</span></button>
-                  <button class="score-premium score-premium__hightech">
-                    <span class="tarif-score">Хайтеч &darr;</span>
-                  </button>
+                  <div class="premium"><span class="tarif-score">Премиум</span></div>
+                  <div class="days"><span class="tarif-score">20 дней</span></div>
+                  <div class="hightech"><span class="tarif-score">Хайтеч &darr;</span></div>
                 </div>
                 <span class="authentification-title">Двухфакторная аутентификация</span>
                 <div class="authentification">
@@ -84,7 +80,7 @@
                     <p>Выключено</p>
                   </div>
                   <div class="onoff-box">
-                    <button class="on-box"></button>
+                    <div class="on-box"></div>
                   </div>
                 </div>
               </div>
@@ -98,34 +94,25 @@
           </div>
           <div class="social__box">
             <div class="socialnet-message-box">
-              <div class="msg">
-                <p class="socialnet-message">
-                  Так же Вы можете подключить свою соц.сеть для безопасности Вашего акаунта
-                </p>
-              </div>
+              <p class="socialnet-maessage">
+                Так же Вы можете подключить свою соц.сеть для безопасности Вашего акаунта
+              </p>
             </div>
-            <div class="socialnet-block">
-              <img src="VK_logo.png" alt="net_logo" />
-              <div class="connect">
-                <p>Подключено</p>
-              </div>
+            <div class="socialnet-connected">
+              <img class="socialnet-logo" src="VK_logo.png" alt="net_logo" />
+              <p class="connect">Подключено</p>
             </div>
-            <div class="socialnet-block socialnet-block__disconnect">
-              <img src="VK_logo.png" alt="net_logo" />
-              <div class="disconnect">
-                <p>Не подключено</p>
-              </div>
+            <div class="socialnet-disconnected">
+              <img class="socialnet-logo" src="VK_logo.png" alt="net_logo" />
+              <p class="connect">Подключено</p>
             </div>
-            <div class="socialnet-block socialnet-block__disconnect">
-              <img src="VK_logo.png" alt="net_logo" />
-              <div class="disconnect">
-                <p>Не подключено</p>
-              </div>
+            <div class="socialnet-disconnected">
+              <img class="socialnet-logo" src="VK_logo.png" alt="net_logo" />
             </div>
-            <img class="left-picture" src="left_picture.svg" alt="left_picture" />
           </div>
         </footer>
-      </сontainer>
+        <img class="left-picture" src="left_corner.png" alt="" />
+      </div>
     </div>
   </body>
 </html>
