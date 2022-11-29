@@ -25,6 +25,16 @@ window.onload = function () {
     let dateRecord = document.querySelector("#set__date").value;
     document.querySelector(".dateRecord").innerText = dateRecord;
   });
+
+  const regForm = document.forms.lk;
+  const sendReg = regForm.sendRegistration;
+
+  sendReg.addEventListener("click", (event) => {
+    event.preventDefault();
+    let login = regForm.login.value;
+    // regForm.login.value = login;
+    console.log(login);
+  });
 };
 
 // document.querySelector("#chkBtn") === document.forms.control.chkBtn
