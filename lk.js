@@ -1,12 +1,16 @@
 window.onload = function () {
   const controlForm = document.forms.control;
-  const control__text = controlForm.controlText;
-  const checkBtn = controlForm.checkButton;
+  const checkBtn = controlForm.chkBtn;
 
-  let ex = "G";
-  control__text.addEventListener("change", (e) => {
-    if (control__text.value === ex) {
-      console.log("Incorrect sign");
+  checkBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    let text = document.querySelector("#symbol_check").value;
+    if (text === "G") {
+      document.querySelector("#symbol_check").value = "incorrect input, please, try again";
+    } else {
+      document.querySelector("#symbol_check").value = text;
     }
   });
 };
+
+// document.querySelector("#chkBtn") === document.forms.control.chkBtn
