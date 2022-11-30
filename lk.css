@@ -28,7 +28,8 @@ label {
   padding: 4px 0;
   margin: 8px 10px;
 }
-input, span{
+input,
+span {
   width: 140px;
   margin-left: 10px;
 }
@@ -48,7 +49,7 @@ input, span{
   margin: 15px;
   align-items: center;
 }
-#symbol_check {
+#symbol__check {
   width: 280px;
   height: 20px;
   margin-top: 8px;
@@ -72,8 +73,6 @@ input, span{
   margin: 10px;
 }
 #registration {
-  visibility: hidden;
-}
-#false {
-  visibility: hidden;
+  padding: 10px 12px;
+  margin: 10px 10px;
 }

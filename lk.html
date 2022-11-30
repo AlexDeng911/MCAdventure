@@ -11,7 +11,8 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="lk.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="lk.js"></script> -->
     <div class="wrapper">
       <container class="__container">
         <header class="header">
@@ -48,23 +49,20 @@
             </div>
             <div class="input__field">
               <label>E-mail:</label>
-              <input type="e-mail" autocomplete="e-mail" />
+              <input type="e-mail" id="email" autocomplete="username" />
             </div>
             <div class="input__field">
               <label>Password:</label>
-              <input type="password" autocomplete="new-password" />
+              <input type="password" id="pass" autocomplete="new-password" />
             </div>
             <div class="input__field">
               <label>Repeat pass:</label>
-              <input type="password" placeholder="re-enter password" />
+              <input type="password" id="confirm__pass" autocomplete="new-password" />
+            </div>
+            <div margin-bottom="10px">
+              <span id="registration"></span>
             </div>
             <button class="send-registration" id="sendRegistration">Зарегистрироваться</button>
-            <div id="registration">
-              <span>Вы зарегистрированы</span>
-            </div>
-            <div id="false">
-              <span>Пароли не совпадают</span>
-            </div>
           </form>
           <form name="control">
             <h2 class="title__registration" align-text="center">Inputs</h2>
