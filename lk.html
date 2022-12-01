@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="lk.css" />
-    <link rel="stylesheet" href="./fonts/Gilroy-ExtraBold.otf" />
-    <link rel="stylesheet" href="./fonts/Gilroy-Light.otf" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script src="script.js"></script>
-    <!-- <script src="lk.js"></script> -->
-    <div class="wrapper">
-      <container class="__container">
-        <header class="header">
-          <div class="header__container">
-            <div class="logo">
-              <img src="adventure 1.png" alt="logo" />
-            </div>
-            <div class="name__site">
-              <p class="title-page">Adventures</p>
-              <a href="" class="link-page">McAdventure.Net</a>
-            </div>
-            <nav class="header__menu menu">
-              <button class="button">
-                <a href="index.html">Главная</a>
-              </button>
-              <ul class="menu__list">
-                <li class="menu__item"><a href="lk.html">Личный кабинет</a></li>
-              </ul>
-            </nav>
-            <div class="control__button">
-              <button class="control"><img src="settings.png" alt="" /></button>
-              <button class="hide"><img src="hide.png" alt="" /></button>
-              <button class="close"><img src="close.png" alt="" /></button>
-              <img class="right-picture" src="right_picture.svg" alt="right_picture" />
-            </div>
-          </div>
-        </header>
-        <div class="registartion__container">
-          <form name="lk">
-            <h2 class="title__registration">Registration</h2>
-            <div class="input__field">
-              <label>Login:</label>
-              <input type="text" id="login" autocomplete="username" placeholder="Введите login" />
-            </div>
-            <div class="input__field">
-              <label>E-mail:</label>
-              <input type="e-mail" id="email" autocomplete="username" />
-            </div>
-            <div class="input__field">
-              <label>Password:</label>
-              <input type="password" id="pass" autocomplete="new-password" />
-            </div>
-            <div class="input__field">
-              <label>Repeat pass:</label>
-              <input type="password" id="confirm__pass" autocomplete="new-password" />
-            </div>
-            <div margin-bottom="10px">
-              <span id="registration"></span>
-            </div>
-            <button class="send-registration" id="sendRegistration">Зарегистрироваться</button>
-          </form>
-          <form name="control">
-            <h2 class="title__registration" align-text="center">Inputs</h2>
-            <div class="input__field input__2">
-              <div class="firstField">
-                <label>Text for check:</label>
-                <input type="text" id="symbol__check" name="controlText" />
-                <button class="send" id="chkBtn" name="checkButton">Check</button>
-              </div>
-              <div class="secondField">
-                <label for="input__2">Color:</label>
-                <input type="color" id="set__color" name="setColor" />
-                <span class="colorNumber"></span>
-                <button class="send" id="colorBtn" name="colorBtn">Set color</button>
-              </div>
-              <div class="thirdField">
-                <label for="set-date">Date:</label>
-                <input type="date" id="set__date" name="setDate" />
-                <span class="dateRecord"></span>
-                <button class="send" id="dateBtn" name="setDateButton">Set</button>
-              </div>
-            </div>
-          </form>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="lk.css" />
+        <link rel="stylesheet" href="./fonts/Gilroy-ExtraBold.otf" />
+        <link rel="stylesheet" href="./fonts/Gilroy-Light.otf" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <container class="__container">
+                <header class="header">
+                    <div class="header__container">
+                        <div class="logo">
+                            <img src="adventure 1.png" alt="logo" />
+                        </div>
+                        <div class="name__site">
+                            <p class="title-page">Adventures</p>
+                            <a href="" class="link-page">McAdventure.Net</a>
+                        </div>
+                        <nav class="header__menu menu">
+                            <button class="button">
+                                <a href="index.html">Главная</a>
+                            </button>
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="lk.html">Личный кабинет</a></li>
+                            </ul>
+                        </nav>
+                        <div class="control__button">
+                            <button class="control"><img src="settings.png" alt="" /></button>
+                            <button class="hide"><img src="hide.png" alt="" /></button>
+                            <button class="close"><img src="close.png" alt="" /></button>
+                            <img class="right-picture" src="right_picture.svg" alt="right_picture" />
+                        </div>
+                    </div>
+                </header>
+                <div class="registartion__container">
+                    <form name="lk">
+                        <h2 class="title__registration">Registration</h2>
+                        <div class="input__field">
+                            <label>Login:</label>
+                            <input type="text" id="login" autocomplete="username" placeholder="Введите login" />
+                        </div>
+                        <div class="input__field">
+                            <label>E-mail:</label>
+                            <input type="e-mail" id="email" autocomplete="username" />
+                        </div>
+                        <div class="input__field">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" data-tel-input id="phone" name="phone" autocomplete="tel"/>
+                        </div>
+                        <div class="input__field">
+                            <label>Password:</label>
+                            <input type="password" id="pass" autocomplete="new-password" />
+                        </div>
+                        <div class="input__field">
+                            <label>Repeat pass:</label>
+                            <input type="password" id="confirm__pass" autocomplete="new-password" />
+                        </div>
+                        <div margin-bottom="10px">
+                            <span id="registration"></span>
+                        </div>
+                        <button class="send-registration" id="sendRegistration">Зарегистрироваться</button>
+                    </form>
+                    <form name="control">
+                        <h2 class="title__registration" align-text="center">Inputs</h2>
+                        <div class="input__field input__2">
+                            <div class="firstField">
+                                <label>Text for check:</label>
+                                <input type="text" id="symbol__check" name="controlText" />
+                                <button class="send" id="chkBtn" name="checkButton">Check</button>
+                            </div>
+                            <div class="secondField">
+                                <label for="input__2">Color:</label>
+                                <input type="color" id="set__color" name="setColor" />
+                                <span class="colorNumber"></span>
+                                <button class="send" id="colorBtn" name="colorBtn">Set color</button>
+                            </div>
+                            <div class="thirdField">
+                                <label for="set-date">Date:</label>
+                                <input type="date" id="set__date" name="setDate" />
+                                <span class="dateRecord"></span>
+                                <button class="send" id="dateBtn" name="setDateButton">Set</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </container>
         </div>
-      </container>
-    </div>
-  </body>
+        <script src="phone__input.js"></script>
+        <script src="lk.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
